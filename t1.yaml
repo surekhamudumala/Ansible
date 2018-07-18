@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+    - name: return ls result
+      command: ls -ltr /etc/ansible/playbooks
+      register: result
+    - debug: 
+        var: result
+
+
+
