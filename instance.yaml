@@ -1,0 +1,15 @@
+---
+- hosts: localhost
+  tasks:
+  - name: test
+    ec2:
+      key_name: test1
+      instance_type: t2.micro
+      image: ami-14c5486b
+      wait: yes
+      count: 1
+      region: us-east-1
+      aws_access_key: AKIAIF2EUEEFR7MVFOYA
+      aws_secret_key: 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
+
+...
