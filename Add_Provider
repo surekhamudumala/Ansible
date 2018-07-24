@@ -4,15 +4,15 @@
   tasks:
   - name: Add Amazon EC2 Provider to ManageIQ
     manageiq_provider:
-      name: 'AWS01'
-      provider_type: 'amazon'
+      name: 'AWS_EC2'
+      provider_type: 'Amazon EC2'
       state: 'present'
-      provider_region: 'us-west-2'
-      access_key_id: '******'
-      secret_access_key: '******'
-      miq_url: 'http://miq.example.com'
+      provider_region: 'us-east-1'
+      access_key_id: 'AKIAIF2EUEEFR7MVFOYA'
+      secret_access_key: 'NFmzgvURivECmG5UNCw8ek6pDZQANY4UmXPuE65x'
+      miq_url: '192.168.50.63'
       miq_username: 'admin'
-      miq_password: '******'
+      miq_password: 'smartvm'
       miq_verify_ssl: false
     register: result
 
